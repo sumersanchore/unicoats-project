@@ -141,7 +141,7 @@ export default function HomeClient() {
     if (!isPaused && BANNER_IMAGES.length > 1) {
       intervalRef.current = setInterval(() => {
         setCurrentSlide((prev) => (prev + 1) % BANNER_IMAGES.length);
-      }, 6000);
+      }, 8000);
     }
   }, [isPaused]);
 
@@ -269,7 +269,7 @@ export default function HomeClient() {
                 initial={{ opacity: 0, scale: 1.05 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.7, ease: "easeInOut" }}
+              
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
                 dragElastic={1}
@@ -283,16 +283,19 @@ export default function HomeClient() {
                 }}
                 className="absolute inset-0 w-full h-full"
               >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  // 👇 UPDATED LINE HERE:
-                  // object-contain for mobile (default), object-cover for md screens and up
-                  className="object-contain md:object-cover object-center w-full h-full"
-                  priority={i === 0}
-                  draggable={false}
-                />
+             <Image
+  src={img.src}
+  alt={img.alt}
+  fill
+  className="object-contain md:object-cover object-center w-full h-full"
+  priority={true}        
+  loading="eager"       
+  placeholder="empty"  
+  unoptimized={true}  
+  draggable={false}
+  sizes="100vw"
+/>
+
 
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-slate-900/10 pointer-events-none" />
