@@ -266,8 +266,7 @@ export default function HomeClient() {
             currentSlide === i && (
               <motion.div
                 key={img.src}
-                initial={{ opacity: 0, scale: 1.05 }}
-                animate={{ opacity: 1, scale: 1 }}
+         
                 exit={{ opacity: 0 }}
               
                 drag="x"
