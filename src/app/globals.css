@@ -5,12 +5,12 @@
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
-  --primary: #2563eb;
+  --primary: #991b1b; /* Red 800 */
   --primary-foreground: #ffffff;
-  --secondary: #dc2626;
+  --secondary: #0f172a; /* Slate 900 */
   --secondary-foreground: #ffffff;
-  --accent: #eff6ff;
-  --accent-foreground: #1e40af;
+  --accent: #fef2f2; /* Red 50 */
+  --accent-foreground: #991b1b;
 }
 
 @layer base {

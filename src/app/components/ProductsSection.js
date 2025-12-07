@@ -23,15 +23,15 @@ const ProductCard = memo(({ product, index }) => {
             bgHover: 'group-hover:bg-blue-50/20'
         },
         {
-            name: 'emerald',
-            ring: 'focus-visible:ring-emerald-500',
-            badgeBg: 'bg-emerald-100',
-            badgeText: 'text-emerald-900',
-            hoverText: 'group-hover:text-emerald-800',
+            name: 'red-dark',
+            ring: 'focus-visible:ring-red-800',
+            badgeBg: 'bg-red-50',
+            badgeText: 'text-red-950',
+            hoverText: 'group-hover:text-red-900',
             scale: 'group-hover:scale-105',
-            borderColor: 'border-emerald-200',
-            hoverBorder: 'group-hover:border-emerald-500',
-            bgHover: 'group-hover:bg-emerald-50/20'
+            borderColor: 'border-red-200',
+            hoverBorder: 'group-hover:border-red-800',
+            bgHover: 'group-hover:bg-red-50/30'
         },
         {
             name: 'red',
@@ -110,16 +110,16 @@ const PRODUCTS = [
 
 const ProductsSection = () => {
     return (
-        <section className="py-10 lg:py-14 lg:px-10 px-4 md:px-6 bg-white text-slate-900">
+        <section className="py-10 lg:py-14 lg:px-14 px-4 md:px-6 bg-white text-slate-900">
             <div className=" mx-auto">
                 {/* Header - Left Aligned */}
                 <div className="mb-14 text-left">
-                    <span className="inline-block text-lg font-bold tracking-wider uppercase bg-emerald-800 text-white px-4 py-2 rounded-lg mb-6">
+                    <span className="inline-block text-lg font-bold tracking-wider uppercase bg-red-800 text-white px-4 py-2 rounded-lg mb-6">
                         Our Products
                     </span>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">
                         Premium Industrial <br className="hidden lg:block" />
-                        <span className="text-emerald-600">
+                        <span className="text-red-700">
                             Abrasives & Media
                         </span>
                     </h2>

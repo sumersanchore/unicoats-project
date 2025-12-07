@@ -12,19 +12,19 @@ export default function RealFooter() {
   // Exact information from the real website
   const contactInfo = [
     {
-      icon: <FaMapMarkerAlt className="text-emerald-500" />,
+      icon: <FaMapMarkerAlt className="text-red-500" />,
       title: 'Address',
-      text: 'Plot No. 6, Vrajbhumi Society, Nr. Uma School, Galaxy Cinema Road, Naroda, Ahmedabad - 382330. Gujarat (INDIA).',
+      text: 'Plot No. 4/2, Asutosh Ind. Estate, Zak-Kadadara Road, Village-Zak, Ta. Dehgam, Dist. Gandhinagar. Gujarat (INDIA).',
       link: 'https://www.google.com/maps?q=Unicoat+Abrasives+industries'
     },
     {
-      icon: <FaPhone className="text-emerald-500" />,
+      icon: <FaPhone className="text-red-500" />,
       title: 'Phone',
       text: '+91 98791 10368',
       link: 'tel:+919879110368'
     },
     {
-      icon: <FaEnvelope className="text-emerald-500" />,
+      icon: <FaEnvelope className="text-red-500" />,
       title: 'Email',
       text: 'unicoat_abrasives@yahoo.com',
       link: 'mailto:unicoat_abrasives@yahoo.com'
@@ -62,10 +62,10 @@ export default function RealFooter() {
   ];
 
   return (
-    <footer className="bg-slate-800 pt-6 pb-2 text-white border-t-4 border-emerald-600 font-sans">
+    <footer className="bg-slate-800 pt-6 pb-2 text-white border-t-4 border-red-800 font-sans">
       {/* Main Footer Content */}
-      <div className="py-4 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto">
+      <div className="py-4 px-2 md:px-4">
+        <div className="w-full lg:px-16  mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
 
             {/* Company & Contact Info - Takes up 5 columns on large screens */}
@@ -78,7 +78,6 @@ export default function RealFooter() {
             >
               <div className="space-y-4 ">
                 <Link href="/" className="flex items-center gap-3 group lg:rounded-xl bg-white/5 p-2 w-fit">
-                  <img src="/UNICOAT.jpg" alt="Unicoat Abrasives Logo" className="h-20 w-auto object-contain rounded-bl-xl rounded-tr-xl" />
                   <img src="/UNICOATLOGO2.jpg" alt="Unicoat Abrasives Logo" className="h-20 w-auto object-contain rounded-tl-xl rounded-br-xl" />
 
                 </Link>
@@ -94,13 +93,13 @@ export default function RealFooter() {
                   href={contactInfo[0].link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-emerald-500/50 transition-all duration-300 group"
+                  className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-red-500/50 transition-all duration-300 group"
                 >
-                  <div className="bg-slate-900 p-3 rounded-xl shrink-0 shadow-sm border border-slate-700/50 group-hover:border-emerald-500/50 transition-colors mt-0.5">
+                  <div className="bg-slate-900 p-3 rounded-xl shrink-0 shadow-sm border border-slate-700/50 group-hover:border-red-500/50 transition-colors mt-0.5">
                     {contactInfo[0].icon}
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">{contactInfo[0].title}</h4>
+                    <h4 className="text-xs font-bold text-red-400 uppercase tracking-widest mb-1">{contactInfo[0].title}</h4>
                     <p className="text-white group-hover:text-white transition-colors text-lg font-medium leading-snug">
                       {contactInfo[0].text}
                     </p>
@@ -112,13 +111,13 @@ export default function RealFooter() {
                   {/* Phone */}
                   <a
                     href={contactInfo[1].link}
-                    className="flex-auto flex items-center gap-3 p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-emerald-500/50 transition-all duration-300 group"
+                    className="flex-auto flex items-center gap-3 p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-red-500/50 transition-all duration-300 group"
                   >
-                    <div className="bg-slate-900 p-2.5 rounded-lg shrink-0 shadow-sm border border-slate-700/50 group-hover:border-emerald-500/50 transition-colors">
+                    <div className="bg-slate-900 p-2.5 rounded-lg shrink-0 shadow-sm border border-slate-700/50 group-hover:border-red-500/50 transition-colors">
                       {contactInfo[1].icon}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-0.5">{contactInfo[1].title}</h4>
+                      <h4 className="text-xs font-bold text-red-400 uppercase tracking-widest mb-0.5">{contactInfo[1].title}</h4>
                       <p className="text-white group-hover:text-white transition-colors text-base font-medium truncate">
                         {contactInfo[1].text}
                       </p>
@@ -128,13 +127,13 @@ export default function RealFooter() {
                   {/* Email */}
                   <a
                     href={contactInfo[2].link}
-                    className="flex-auto flex items-center gap-3 p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-emerald-500/50 transition-all duration-300 group"
+                    className="flex-auto flex items-center gap-3 p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-red-500/50 transition-all duration-300 group"
                   >
-                    <div className="block bg-slate-900 p-2.5 rounded-lg shrink-0 shadow-sm border border-slate-700/50 group-hover:border-emerald-500/50 transition-colors">
+                    <div className="block bg-slate-900 p-2.5 rounded-lg shrink-0 shadow-sm border border-slate-700/50 group-hover:border-red-500/50 transition-colors">
                       {contactInfo[2].icon}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-0.5">{contactInfo[2].title}</h4>
+                      <h4 className="text-xs font-bold text-red-400 uppercase tracking-widest mb-0.5">{contactInfo[2].title}</h4>
                       <p className="text-white group-hover:text-white transition-colors text-base font-medium whitespace-nowrap">
                         {contactInfo[2].text}
                       </p>
@@ -155,14 +154,14 @@ export default function RealFooter() {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <h4 className="text-xl font-bold mb-6 text-white flex items-center gap-3">
-                  <span className="w-1.5 h-6 bg-emerald-500 rounded-full"></span>
+                  <span className="w-1.5 h-6 bg-red-700 rounded-full"></span>
                   Our Products
                 </h4>
                 <div className="space-y-4">
                   {products.map((product, index) => (
                     <Link key={index} href="#" className="flex items-center group cursor-pointer w-fit">
-                      <span className="w-1.5 h-1.5 rounded-full bg-slate-600 group-hover:bg-emerald-500 mr-3 transition-colors duration-300"></span>
-                      <span className="text-white group-hover:text-emerald-400 transition-colors text-lg break-words leading-tight group-hover:translate-x-1 duration-300">{product}</span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-slate-600 group-hover:bg-red-500 mr-3 transition-colors duration-300"></span>
+                      <span className="text-white group-hover:text-red-400 transition-colors text-lg break-words leading-tight group-hover:translate-x-1 duration-300">{product}</span>
                     </Link>
                   ))}
                 </div>
@@ -176,7 +175,7 @@ export default function RealFooter() {
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 <h4 className="text-xl font-bold mb-6 text-white flex items-center gap-3">
-                  <span className="w-1.5 h-6 bg-emerald-500 rounded-full"></span>
+                  <span className="w-1.5 h-6 bg-red-700 rounded-full"></span>
                   Quick Links
                 </h4>
                 <div className="space-y-4">
@@ -189,8 +188,8 @@ export default function RealFooter() {
                         rel="noopener noreferrer"
                         className="flex items-center group cursor-pointer w-fit"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-slate-600 group-hover:bg-emerald-500 mr-3 transition-colors duration-300"></span>
-                        <span className="text-white group-hover:text-emerald-400 transition-colors text-lg break-words leading-tight group-hover:translate-x-1 duration-300">{link.name}</span>
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-600 group-hover:bg-red-500 mr-3 transition-colors duration-300"></span>
+                        <span className="text-white group-hover:text-red-400 transition-colors text-lg break-words leading-tight group-hover:translate-x-1 duration-300">{link.name}</span>
                       </a>
                     ) : (
                       <Link
@@ -198,8 +197,8 @@ export default function RealFooter() {
                         href={link.href}
                         className="flex items-center group cursor-pointer w-fit"
                       >
-                        <span className={`w-1.5 h-1.5 rounded-full mr-3 transition-colors duration-300 ${isActive(link.href) ? "bg-emerald-500" : "bg-slate-600 group-hover:bg-emerald-500"}`}></span>
-                        <span className={`transition-all duration-300 text-lg break-words leading-tight ${isActive(link.href) ? "text-emerald-400 font-bold translate-x-1" : "text-white group-hover:text-emerald-400 group-hover:translate-x-1"}`}>{link.name}</span>
+                        <span className={`w-1.5 h-1.5 rounded-full mr-3 transition-colors duration-300 ${isActive(link.href) ? "bg-red-500" : "bg-slate-600 group-hover:bg-red-500"}`}></span>
+                        <span className={`transition-all duration-300 text-lg break-words leading-tight ${isActive(link.href) ? "text-red-400 font-bold translate-x-1" : "text-white group-hover:text-red-400 group-hover:translate-x-1"}`}>{link.name}</span>
                       </Link>
                     )
                   ))}
@@ -233,10 +232,10 @@ export default function RealFooter() {
                   {socialLinks.map((social, index) => (
                     <motion.a
                       key={index}
-                      whileHover={{ scale: 1.1, backgroundColor: '#059669' }}
+                      whileHover={{ scale: 1.1, backgroundColor: '#b91c1c' }}
                       whileTap={{ scale: 0.9 }}
                       href={social.href}
-                      className="bg-slate-800 p-3 rounded-full text-white transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/20"
+                      className="bg-slate-800 p-3 rounded-full text-white transition-all duration-300 hover:shadow-lg hover:shadow-red-500/20"
                     >
                       <social.icon className="text-xl" />
                     </motion.a>
@@ -264,7 +263,7 @@ export default function RealFooter() {
                 href="https://shraddhawebsoft.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-2 text-white hover:text-emerald-500 font-semibold transition-colors"
+                className="ml-2 text-white hover:text-red-500 font-semibold transition-colors"
               >
                 Shraddha Websoft
               </a>
