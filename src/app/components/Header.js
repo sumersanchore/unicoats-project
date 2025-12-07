@@ -36,7 +36,7 @@ const Header = () => {
   const dropdownRef = useRef(null);
   const pathname = usePathname();
 
-  const isActive = (path) => pathname === path;
+  const isActive = (path) => pathname === (path === '/' ? path : path + '/');
 
   // Handle scroll effect
   useEffect(() => {
