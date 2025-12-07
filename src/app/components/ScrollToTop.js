@@ -41,7 +41,7 @@ export default function ScrollToTop() {
                     whileHover={{ scale: 1.1, y: -2 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={scrollToTop}
-                    className="fixed bottom-8 right-8 z-[90] p-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-lg hover:shadow-emerald-500/40 transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 group"
+                    className="fixed bottom-8 right-4 z-[90] p-3.5 rounded-xl bg-gradient-to-r from-red-600 to-red-800 text-white shadow-lg hover:shadow-red-600/40 transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-600 group"
                     aria-label="Scroll to top"
                 >
                     <motion.div

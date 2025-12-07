@@ -349,8 +349,8 @@ export default function HomeClient() {
 
       {/* --- ABOUT SECTION --- */}
       <section className="relative z-10 bg-gray-50 w-full">
-        <div className="w-full mx-auto px-0 md:px-6 lg:px-14 py-0 md:py-10">
-          <div className="bg-white rounded-3xl py-8 md:px-12 lg:px-16 shadow-xl border border-gray-100">
+        <div className="w-full mx-auto px-0 md:px-8 lg:px-14 py-0 md:py-10">
+          <div className="bg-white  py-8 pl-2 md:px-12 lg:px-16 shadow-xl border border-gray-100">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20 items-start">
               {/* Left Column: Headings */}
               <div className="space-y-6">
@@ -407,7 +407,7 @@ export default function HomeClient() {
 
 
       {/* --- CTA SECTION --- */}
-      <section className="py-10 lg:py-14 px-4 md:px-6 lg:px-14 lazy-load ">
+      <section className="py-12 lg:py-14 px-3 md:px-8 lg:px-14 lazy-load ">
         <div className=" mx-auto">
           <div className="relative overflow-hidden rounded-xl border border-slate-700 bg-gradient-to-br from-slate-900 via-slate-800 to-red-950 shadow-2xl p-8 md:p-12 lg:p-14 text-center">
             <div className="absolute top-0 left-0 w-64 h-64 bg-red-700/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
@@ -424,13 +424,13 @@ export default function HomeClient() {
               <div className="flex flex-col sm:flex-row justify-center gap-3 lg:gap-4">
                 <Link
                   href="/contact"
-                  className="bg-red-800 border border-transparent text-white py-3 px-6 lg:px-8 items-center rounded-full font-bold shadow-lg hover:bg-red-700 transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2 focus:ring-offset-slate-900"
+                  className="bg-red-800 border border-transparent text-white py-3 px-3 lg:px-8 items-center rounded-full font-bold shadow-lg hover:bg-red-700 transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2 focus:ring-offset-slate-900"
                 >
                   Contact Us
                 </Link>
                 <Link
                   href="/inquiry"
-                  className="border border-white/30 text-white py-3 px-6 lg:px-8 rounded-full font-bold hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900"
+                  className="border border-white/30 text-white py-3 px-3 lg:px-8 rounded-full font-bold hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900"
                 >
                   Get a Quote
                 </Link>
@@ -442,11 +442,11 @@ export default function HomeClient() {
 
       {/* --- SERVICES / EXPERTISE SECTION --- */}
       {/* --- SERVICES / EXPERTISE SECTION --- */}
-      <section className="py-10 lg:py-14 relative overflow-hidden bg-white text-slate-900 lazy-load">
+      <section className="py-12 lg:py-14 relative overflow-hidden bg-white text-slate-900 lazy-load">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:16px_16px]" />
 
-        <div className=" mx-auto px-4 md:px-6 lg:px-14 relative z-10">
+        <div className=" mx-auto px-3 md:px-8 lg:px-14 relative z-10">
 
           {/* Header - Left Aligned to match About */}
           <div className="w-full mb-12 lg:mb-16">
@@ -493,7 +493,7 @@ export default function HomeClient() {
       </section>
 
 
-      <section className="py-10 lg:py-14 px-4 md:px-6 lg:px-14 bg-slate-50 lazy-load">
+      <section className="py-12 lg:py-14 px-3 md:px-8 lg:px-14 bg-slate-50 lazy-load">
         <div className=" mx-auto">
           {/* Section Header */}
           <div className="text-left mb-10">
@@ -611,7 +611,7 @@ export default function HomeClient() {
 
 
       {/* --- CONTACT FOOTER --- */}
-      <section className="py-10 lg:py-14 px-4 md:px-6 lg:px-14 lazy-load">
+      <section className="py-12 lg:py-14 px-3 md:px-8 lg:px-14 lazy-load">
         <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
           <div className="flex flex-col justify-center">
             <h3 className="text-2xl lg:text-3xl font-extrabold text-slate-900 mb-2">
@@ -665,14 +665,14 @@ export default function HomeClient() {
 
 
 
-      <section className="py-10 cursor-pointer lg:py-14 relative overflow-hidden lazy-load">
+      <section className="py-12 cursor-pointer lg:py-14 relative overflow-hidden lazy-load">
         {/* Abstract Background Patterns */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-red-700/10 rounded-full blur-[120px] mix-blend-screen" />
           <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] mix-blend-screen" />
         </div>
 
-        <div className=" mx-auto px-4 md:px-6 lg:px-14 relative z-10">
+        <div className=" mx-auto px-3 md:px-8 lg:px-14 relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 gap-6">
             <div className="max-w-3xl text-left">
 
@@ -688,7 +688,7 @@ export default function HomeClient() {
           <div className="relative ">
             {/* Carousel Content */}
             <div
-              className="overflow-hidden -mx-4 px-4 pb-12 cursor-grab active:cursor-grabbing"
+              className="overflow-hidden -mx-6 px-3 pb-12 cursor-grab active:cursor-grabbing"
               onMouseEnter={() => setIsTestimonialPaused(true)}
               onMouseLeave={() => setIsTestimonialPaused(false)}
             >
